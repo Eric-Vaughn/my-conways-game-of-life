@@ -7,4 +7,9 @@ export class Cell {
     this.col = col;
     this.isAlive = false;
   }
+
+  // Flips a dead cell into an alive cell and vice versa
+  flipState() {
+    this.isAlive ? (this.isAlive = false) : (this.isAlive = true);
+  }
 }
