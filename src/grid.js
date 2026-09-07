@@ -5,6 +5,7 @@ export class Grid {
     constructor(rows = 0, cols = 0) {
         this.rows = rows;
         this.cols = cols;
+        this.matrix = Array.from({ length: rows }, () => Array(cols).fill(0));
     }
 
     // Draws the grid
