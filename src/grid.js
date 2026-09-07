@@ -6,4 +6,9 @@ export class Grid {
         this.rows = rows;
         this.cols = cols;
     }
+
+    // Draws the grid
+    draw() {
+        // TODO 
+    }
 }
