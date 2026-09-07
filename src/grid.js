@@ -1,4 +1,4 @@
-import { Cell } from "./cell.js";
+import { Cell } from "./Cell.js";
 
 const FRAME_RATE = 8; // Frames per second
 
