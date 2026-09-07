@@ -7,7 +7,8 @@ export class Grid {
   constructor(rows = 10, cols = 10) {
     this.rows = rows;
     this.cols = cols;
-    this.matrix = Array.from({ length: rows }, () => Array(cols).fill(0));
+    this.matrix = Array.from({ length: rows }, (_, r) => 
+                  Array.from({ length: cols }, (_, c) => new Cell(r, c)) );
   }
 
   // Draws the grid
